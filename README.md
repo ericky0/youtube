@@ -14,7 +14,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About the project 🎨
 
-- This project is a YouTube clone. It allows users to watch and upload videos on an intuitive and user-friendly interface. Additionally, the project includes features such as video recommendations based on popularity, advanced search to help users quickly find what they're looking for, and more. With its user-friendly interface and robust functionality, this YouTube clone is the perfect choice for anyone seeking a high-quality video sharing platform.
+- AskTube is a feature-rich video sharing platform inspired by YouTube.. It allows users to watch and upload videos on an intuitive and user-friendly interface. Additionally, the project includes features such as video recommendations based on popularity, advanced search to help users quickly find what they're looking for, and more. With its user-friendly interface and robust functionality, this YouTube clone is the perfect choice for anyone seeking a high-quality video sharing platform.
 
 
 ## Pages
@@ -36,8 +36,16 @@
 ![image](https://user-images.githubusercontent.com/53923000/216241201-86e718bc-195a-457c-b844-4bb89844de24.png)
 ![image](https://user-images.githubusercontent.com/53923000/216241242-c3132503-9d9b-44f7-a629-270b2b968644.png)
 
-## Functionalities
+## API
 ![image](https://user-images.githubusercontent.com/53923000/216240475-adbe3021-e2eb-4549-ad91-ee2ab0e940c4.png)
+
+## Key-Features
+* Video Upload: Users can upload and share their own videos on the platform.
+* Video Playback: Users can watch videos in high quality with options for adjusting playback speed and volume.
+* Video Recommendations: Users receive video recommendations based on their popularity.
+* Advanced Search: The platform's search function is optimized to help users quickly find the videos they're looking for.
+* Light/Dark Mode: The platform offers both light and dark mode options for user customization.
+* Responsive Design: The platform is designed to be fully responsive and optimized for use on any device.
 
 
 ## 🧪 Some technologies used in this project:
