@@ -1,6 +1,6 @@
 <h1>AskTube - youtube clone</h1>
 
-> Status: Finished. maybe more features in the future =)
+> Status: Finished. mabe more features in the future =)
 <br/>
 
 <p align="center">
