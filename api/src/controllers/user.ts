@@ -1,16 +1,24 @@
 import { NextFunction, Request, Response } from 'express'
 import { createError } from '../error'
 import User from '../models/User'
+<<<<<<< HEAD
 import bcrypt from 'bcryptjs'
 import Video from '../models/Video'
+=======
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
 
 export const update = async (req: Request, res: Response, next: NextFunction) => {
   if(req.params.id === req.user.id) {
     try {
+<<<<<<< HEAD
       const salt = bcrypt.genSaltSync(10)
       const hash = bcrypt.hashSync(req.body.password, salt)
       const updatedUser = await User.findByIdAndUpdate(req.params.id, {
         $set: req.body, password: hash
+=======
+      const updatedUser = await User.findByIdAndUpdate(req.params.id, {
+        $set: req.body
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
       },
       { 
         new: true 
@@ -76,6 +84,7 @@ export const unsubscribe = async (req: Request, res: Response, next: NextFunctio
 }
 
 export const like = async (req: Request, res: Response, next: NextFunction) => {
+<<<<<<< HEAD
   const id = req.user.id
   const videoId = req.params.videoId
   try {
@@ -101,4 +110,11 @@ export const dislike = async (req: Request, res: Response, next: NextFunction) =
   } catch (err) {
     next(err)
   }
+=======
+  res.json('its sucessful')
+}
+
+export const dislike = async (req: Request, res: Response, next: NextFunction) => {
+  res.json('its sucessful')
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
 }

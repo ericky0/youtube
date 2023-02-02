@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import styled from 'styled-components'
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
@@ -7,6 +8,13 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux/store';
 import Upload from './Upload'
+=======
+import React from 'react'
+import styled from 'styled-components'
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import { Link } from 'react-router-dom';
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
 
 const Container = styled.div`
   position: sticky;
@@ -54,6 +62,7 @@ const Button = styled.button`
   align-items: center;
   gap: 5px;
 `
+<<<<<<< HEAD
 const User = styled.div`
   display: flex;
   align-items: center;
@@ -99,6 +108,25 @@ const Navbar = () => {
       </Container>
       {open && <Upload setOpen={setOpen}/>}
     </>
+=======
+
+
+
+const Navbar = () => {
+  return (
+    <Container>
+      <Wrapper>
+        <Search>
+          <Input placeholder='Search'/>
+          <SearchOutlinedIcon/>
+        </Search>
+        <Link to='signin' style={{textDecoration: 'none'}}>
+
+        <Button><AccountCircleOutlinedIcon/>Sign In</Button>
+        </Link>
+      </Wrapper>
+    </Container>
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
   )
 }
 

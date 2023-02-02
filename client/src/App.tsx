@@ -5,7 +5,10 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home'
 import Video from './pages/Video'
 import SignIn from './pages/SignIn'
+<<<<<<< HEAD
 import Search from './pages/Search'
+=======
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
 import {darkTheme, lightTheme } from './utils/Theme'
 import {
   BrowserRouter as Router,
@@ -39,10 +42,14 @@ function App() {
           <Wrapper>
             <Routes>
               <Route path='/'>
+<<<<<<< HEAD
                 <Route index element={<Home type='random'/>}/>
                 <Route path='trends' element={<Home type='trends'/>}/>
                 <Route path='subscriptions' element={<Home type='sub'/>}/>
                 <Route path='search' element={<Search/>}/>
+=======
+                <Route index element={<Home />}/>
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
                 <Route path='signin' element={<SignIn />}/>
                 <Route path='video'>
                   <Route path=':id' element={<Video />} />

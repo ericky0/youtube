@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { AddTaskOutlined, ReplyOutlined, ThumbDownOffAltOutlined, ThumbUpOutlined, ThumbUp, ThumbDown } from '@mui/icons-material'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
@@ -11,6 +12,13 @@ import { RootState } from '../redux/store'
 import { subscription } from '../redux/userSlice'
 import { dislike, fetchSuccess, like } from '../redux/videoSlice'
 import { user } from '../types/User'
+=======
+import { AddTaskOutlined, ReplyOutlined, ThumbDownOffAltOutlined, ThumbUpOutlined } from '@mui/icons-material'
+import React from 'react'
+import styled from 'styled-components'
+import Card from '../components/Card'
+import Comments from '../components/Comments'
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
 
 const Container = styled.div` 
   display: flex;
@@ -37,6 +45,10 @@ const Details = styled.div`
 const Info = styled.span`
   color: ${({theme}) => theme.textSoft};
 `
+<<<<<<< HEAD
+=======
+
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
 const Buttons = styled.div`
   display: flex;
   gap: 20px;
@@ -52,6 +64,12 @@ const Hr = styled.hr`
   margin: 15px 0px;
   border: 0.5px solid ${({theme}) => theme.soft};
 `
+<<<<<<< HEAD
+=======
+const Recommendation = styled.div` 
+  flex: 2;
+`
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
 const Channel = styled.div`
   display: flex;
   justify-content: space-between;
@@ -92,6 +110,7 @@ const Subscribe = styled.button`
   padding: 10px 20px;
   cursor: pointer;
 `
+<<<<<<< HEAD
 const VideoFrame = styled.video`
   max-height: 720px;
   width: 100%;
@@ -138,10 +157,15 @@ const Video = () => {
       : await axios.put(`/users/sub/${channel?._id}`)
     dispatch(subscription(channel?._id))
   }
+=======
+
+const Video = () => {
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
   return (
     <Container>
       <Content>
         <VideoWrapper>
+<<<<<<< HEAD
           <VideoFrame src={currentVideo?.videoUrl} controls>
 
           </VideoFrame>
@@ -161,6 +185,23 @@ const Video = () => {
               ? <ThumbDown /> 
               : <ThumbDownOffAltOutlined /> }
               Dislike</Button>
+=======
+          <iframe 
+            width="100%" 
+            height="720" 
+            src="https://www.youtube.com/embed/yHxhTZ0k0Kw" 
+            title="BoyWithUke - Live In LA | FULL CONCERT The Roxy Theatre 2022" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen></iframe>
+        </VideoWrapper>
+        <Title>Test Video</Title>
+        <Details>
+          <Info>983,506 • Sep 28, 2022</Info>
+          <Buttons>
+            <Button><ThumbUpOutlined />123</Button>
+            <Button><ThumbDownOffAltOutlined />Dislike</Button>
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
             <Button><ReplyOutlined />Share</Button>
             <Button><AddTaskOutlined />Save</Button>
           </Buttons>
@@ -168,6 +209,7 @@ const Video = () => {
         <Hr />
         <Channel>
           <ChannelInfo>
+<<<<<<< HEAD
             <Image src={channel?.img}/>
             <ChannelDetail>
               <ChannelName>{channel?.name}</ChannelName>
@@ -183,11 +225,44 @@ const Video = () => {
               : "Subscribe"
             }
           </Subscribe>
+=======
+            <Image src='https://lastfm.freetls.fastly.net/i/u/770x0/faeba6b52fda6acffad7682456cbd42d.jpg'/>
+            <ChannelDetail>
+              <ChannelName>askke dev</ChannelName>
+              <ChannelCounter>1M subscribers</ChannelCounter>
+              <Description>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Quibusdam natus quo perferendis! Non nam laborum, totam minus obcaecati
+                temporibus est voluptatibus similique veniam hic tenetur distinctio. 
+                Harum reiciendis vel animi!
+              </Description>
+            </ChannelDetail>
+          </ChannelInfo>
+          <Subscribe>Subscribe</Subscribe>
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
         </Channel>
         <Hr />
         <Comments />
       </Content>
+<<<<<<< HEAD
       <Recommendation tags={currentVideo?.tags}></Recommendation>
+=======
+      <Recommendation>
+        <Card type='sm'/>
+        <Card type='sm'/>
+        <Card type='sm'/>
+        <Card type='sm'/>
+        <Card type='sm'/>
+        <Card type='sm'/>
+        <Card type='sm'/>
+        <Card type='sm'/>
+        <Card type='sm'/>
+        <Card type='sm'/>
+        <Card type='sm'/>
+        <Card type='sm'/>
+        <Card type='sm'/>
+      </Recommendation>
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
     </Container>
 
   )

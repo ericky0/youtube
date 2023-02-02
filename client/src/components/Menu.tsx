@@ -18,8 +18,11 @@ import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import SettingsBrightnessOutlinedIcon from "@mui/icons-material/SettingsBrightnessOutlined";
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux/store';
+=======
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
 
 const Container = styled.div`
   flex: 1;
@@ -85,8 +88,11 @@ type MenuProps = {
 }
 
 const Menu = ({darkMode, setDarkMode}: MenuProps) => {
+<<<<<<< HEAD
   const currentUser = useSelector((state: RootState) => state.user.currentUser)
 
+=======
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
   return (
     <Container>
       <Wrapper>
@@ -96,6 +102,7 @@ const Menu = ({darkMode, setDarkMode}: MenuProps) => {
             AskTube
           </Logo>
         </Link>
+<<<<<<< HEAD
         <Link to='/' style={{textDecoration: 'none', color:'inherit'}}>
           <Item>
             <HomeIcon />
@@ -114,6 +121,20 @@ const Menu = ({darkMode, setDarkMode}: MenuProps) => {
             Subscriptions
           </Item>
         </Link>
+=======
+        <Item>
+          <HomeIcon />
+          Home
+        </Item>
+        <Item>
+          <ExploreOutlinedIcon />
+          Explore
+        </Item>
+        <Item>
+          <SubscriptionsOutlinedIcon />
+          Subscriptions
+        </Item>
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
         <Hr/>
         <Item>
           <VideoLibraryOutlinedIcon />
@@ -124,6 +145,7 @@ const Menu = ({darkMode, setDarkMode}: MenuProps) => {
           History
         </Item>
         <Hr/>
+<<<<<<< HEAD
         {!currentUser &&
           <>
             <Login>
@@ -137,6 +159,17 @@ const Menu = ({darkMode, setDarkMode}: MenuProps) => {
             <Hr/>
           </>
         }
+=======
+        <Login>
+          Sign in to like videos, comment, and subscribe.
+          <Link to='signin' style={{textDecoration: 'none'}}>
+            <Button>
+              <AccountCircleOutlinedIcon/>Sign In
+            </Button>
+          </Link>
+        </Login>
+        <Hr/>
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
         <Title>BEST OF ASKTUBE</Title>
         <Item>
           <LibraryMusicOutlinedIcon />

@@ -6,10 +6,16 @@ export interface User extends Document {
   password: string,
   img?: string,
   subscribers: number,
+<<<<<<< HEAD
   subscribedUsers: [string],
   createdAt: Date,
   updatedAt: Date,
   fromGoogle: boolean,
+=======
+  subscribedUsers: [User],
+  createdAt: Date,
+  updatedAt: Date,
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
   _doc: any
 }
 
@@ -26,6 +32,10 @@ const UserSchema = new mongoose.Schema({
   },
   password: {
     type: String,
+<<<<<<< HEAD
+=======
+    required: true
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
   },
   img: {
     type: String
@@ -36,10 +46,13 @@ const UserSchema = new mongoose.Schema({
   },
   subscribedUsers: {
     type: [String]
+<<<<<<< HEAD
   },
   fromGoogle:{
     type: Boolean,
     default: false
+=======
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
   }
 }, {timestamps: true});
 

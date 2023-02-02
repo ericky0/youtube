@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import axios from 'axios'
 import { FormEvent, useState } from 'react'
 import { useDispatch } from 'react-redux'
@@ -5,6 +6,10 @@ import styled from 'styled-components'
 import { loginFailure, loginStart, loginSuccess } from '../redux/userSlice'
 import {auth, provider} from '../firebase'
 import { signInWithPopup } from 'firebase/auth'
+=======
+import React from 'react'
+import styled from 'styled-components'
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
 
 const Container = styled.div`
   display: flex;
@@ -64,6 +69,7 @@ const Link = styled.span`
 `
 
 const SignIn = () => {
+<<<<<<< HEAD
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -95,11 +101,14 @@ const SignIn = () => {
       dispatch(loginFailure())
     })
   }
+=======
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
   return (
     <Container>
       <Wrapper>
         <Title>Sign In</Title>
         <SubTitle>to continue to AskTube</SubTitle>
+<<<<<<< HEAD
         <Input placeholder='username' onChange={e => setName(e.target.value)}/>
         <Input placeholder='password' type='password' onChange={e => setPassword(e.target.value)}/>
         <Button onClick={handleLogin}>Sign In</Button>
@@ -108,6 +117,15 @@ const SignIn = () => {
         <Input placeholder='username' onChange={e => setName(e.target.value)}/>
         <Input placeholder='email' type='email' onChange={e => setEmail(e.target.value)}/>
         <Input placeholder='password' type='password' onChange={e => setPassword(e.target.value)}/>
+=======
+        <Input placeholder='username'/>
+        <Input placeholder='password' type='password'/>
+        <Button>Sign In</Button>
+        <Title>or</Title>
+        <Input placeholder='username'/>
+        <Input placeholder='email' type='email'/>
+        <Input placeholder='password' type='password'/>
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
         <Button>Sign Up</Button>
       </Wrapper>
       <More>

@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { format } from 'timeago.js'
 import { comment } from '../types/Comment'
 import { user } from '../types/User'
+=======
+import React from 'react'
+import styled from 'styled-components'
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
 
 const Container = styled.div`
   display: flex;
@@ -34,6 +39,7 @@ const Date = styled.span`
 const Text = styled.span`
   font-size: 14px;
 `
+<<<<<<< HEAD
 
 type commentProps = {
   comment: comment
@@ -60,6 +66,19 @@ const Comment = ({comment}: commentProps) => {
         <Name>{channel?.name} <Date>{format(comment.createdAt!)}</Date> </Name>
         <Text>
           {comment.desc}
+=======
+const Comment = () => {
+  return (
+    <Container>
+      <Avatar src='https://lastfm.freetls.fastly.net/i/u/770x0/faeba6b52fda6acffad7682456cbd42d.jpg'/>
+      <Details>
+        <Name>Erick Hogarth <Date>1 week ago</Date> </Name>
+        <Text>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          In voluptatem assumenda laboriosam ad necessitatibus, pariatur 
+          nihil repellat iusto velit aliquam eos unde obcaecati architecto 
+          perspiciatis omnis est, impedit quod libero?
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
         </Text>
       </Details>
     </Container>

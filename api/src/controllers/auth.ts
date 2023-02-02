@@ -43,6 +43,7 @@ export const signin = async (req: Request, res: Response, next: NextFunction) =>
   } catch (err) {
     next(err)
   }
+<<<<<<< HEAD
 }
 
 export const googleAuth = async (req: Request, res: Response, next: NextFunction) => {
@@ -69,4 +70,6 @@ export const googleAuth = async (req: Request, res: Response, next: NextFunction
   } catch (err) {
     next(err)
   }
+=======
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
 }

@@ -4,6 +4,7 @@ import { verifyToken } from '../middlewares/verifyToken'
 
 const router = express.Router()
 
+<<<<<<< HEAD
 //create video
 router.post('/', verifyToken, addVideo)
 
@@ -23,6 +24,15 @@ router.put('/view/:id', addView)
 router.get('/trends', trends)
 
 //random videos
+=======
+//create a video
+router.post('/', verifyToken, addVideo)
+router.put('/:id', verifyToken, updateVideo)
+router.delete('/:id', verifyToken, deleteVideo)
+router.get('/find/:id', getVideo)
+router.put('/view/:id', addView)
+router.get('/trends/', trends)
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
 router.get('/random', random)
 
 // get subscribed videos

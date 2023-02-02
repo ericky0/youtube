@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
@@ -5,6 +6,11 @@ import styled from 'styled-components'
 import { format } from 'timeago.js'
 import { video } from '../types/Video'
 import { user } from '../types/User'
+=======
+import React from 'react'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
 
 const Container = styled.div`
   width: ${(p: CardProps) => p.type !== 'sm' && '360px'};
@@ -18,7 +24,10 @@ const Image = styled.img`
   height: ${(p: CardProps) => p.type === 'sm' ? '120px' : '202px'};
   object-fit: cover;
   flex: 1;
+<<<<<<< HEAD
   border-radius: 10px;
+=======
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
 `
 const Details = styled.div`
   display: flex;
@@ -55,6 +64,7 @@ const Info = styled.div`
 `
 
 type CardProps = {
+<<<<<<< HEAD
   type?: string
   video?: video
 }
@@ -83,6 +93,26 @@ const Card = ({type, video}: CardProps) => {
             <Title>{video?.title}</Title>
             <ChannelName>{channel?.name}</ChannelName>
             <Info>{video?.views} views • {format(video!.createdAt)}</Info>
+=======
+  type?: string;
+}
+
+const Card = ({type}: CardProps) => {
+  return (
+    <Link to='/video/test' style={{textDecoration: 'none'}}>
+      <Container type={type}>
+        <Image 
+          type={type}
+          src='https://i.ytimg.com/vi/yHxhTZ0k0Kw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPeugEuXxlD5ffevpwDwFmVCXAcg'/>
+        <Details>
+          <ChannelImage 
+            type={type}
+            src='https://lastfm.freetls.fastly.net/i/u/770x0/faeba6b52fda6acffad7682456cbd42d.jpg'/>
+          <Texts>
+            <Title>Test Video</Title>
+            <ChannelName>askke dev</ChannelName>
+            <Info>983,506 • 1 week ago</Info>
+>>>>>>> 32c77c90990a9444f5780c3258fa837ad3dce9e6
           </Texts>
         </Details>
       </Container>
