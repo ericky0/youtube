@@ -14,7 +14,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About the project 🎨
 
-- AskTube is a feature-rich video sharing platform inspired by YouTube.. It allows users to watch and upload videos on an intuitive and user-friendly interface. Additionally, the project includes features such as video recommendations based  popularity, advanced search to help users quickly find what they're looking for, and more. With its user-friendly interface and robust functionality, this YouTube clone is the perfect choice for anyone seeking a high-quality video sharing platform.
+- AskTube is a feature-rich video sharing platform inspired by YouTube.. It allows users to watch and upload videos on an intuitive and user-friendly interface. Additionally, the project includes features such as video recommendations based on popularity, advanced search to help users quickly find what they're looking for, and more. With its user-friendly interface and robust functionality, this YouTube clone is the perfect choice for anyone seeking a high-quality video sharing platform.
 
 
 ## Pages
